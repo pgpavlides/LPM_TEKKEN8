@@ -1,5 +1,5 @@
 import React from 'react';
-import './GridView.css'; // Assuming you have some CSS for styling
+
 import { Link } from 'react-router-dom';
 import images from './Characters';
 
