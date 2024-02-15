@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  &:before,
+  &:after {
+    box-sizing: border-box;
+  }
+}
+
+html,
+body {
+  overflow-x: hidden;
+  background-color: rgb(27, 27, 27);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* This will center the children horizontally */
+  justify-content: center; /* This will center the children vertically, but it's optional based on your layout */
+  width: 100%; /* Ensure container takes full width */
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.title {
+  text-align: center; /* Center the text within the title element itself */
+  width: 100%; /* Ensure title element takes full width */
+  margin: 20px 0;
+  color: white;
+
+ 
+}
+
+.image-name {
+  margin: 20px 0;
+  color: white;
+  height: 50px;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 2fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.grid img {
+  width: 100%;
+  height: auto;
+}
+
+.patates {
+  width: 250px;
+  height: 300px;
+  border: 2px solid #000;
+  transition: transform .2s ease;
+}
+
+.patates:hover {
+  transform: scale(1.05);
+}
+
+.patates:active {
+  transform: scale(0.85);
+}
+
+
+
+
+/* ImageDetail.css */
+.image-detail {
+  position: relative;
+  text-align: center; /* This centers the text elements like h2 within .image-detail */
+  padding: 20px; /* Add some padding around the content for better layout */
+}
+
+.image-detail h2 {
+  margin-top: 60px; /* Adjust space for the back button and centering the title */
+  font-size: 24px; /* Example font size, adjust as needed */
+}
+
+.image-detail img {
+  max-width: 100%;
+  height: auto; /* Ensures the image is responsive and keeps its aspect ratio */
+  margin-top: 20px; /* Adds some space between the title and the image */
+}
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white; /* Background color for the button */
+  border: 1px solid #ccc; /* Adds a subtle border to the button */
+  color: black; /* Text color */
+}
+
+/* Additional styles for the 'Image not found' message */
+.not-found {
+  font-size: 20px; /* Example font size, adjust as needed */
+  margin-top: 100px; /* Center the message vertically a bit */
+}
+
+
+.image-inside-character {
+  width: 150px;
+  height: 250px;
+  height: auto;
+  margin-top: 20px;
+}
+
+.character-name-inside {
+  
+  color: white;
+}
